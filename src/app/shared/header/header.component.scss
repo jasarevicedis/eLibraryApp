@@ -1,0 +1,21 @@
+:host {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .nav {
+        width: 200px;
+        height: 40px;
+        display: flex;
+        background-color: lightblue;
+        margin-right: 20px;
+    }
+}
