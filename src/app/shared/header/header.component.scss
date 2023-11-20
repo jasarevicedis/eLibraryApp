@@ -15,7 +15,43 @@
         width: 200px;
         height: 40px;
         display: flex;
-        background-color: lightblue;
+        //background-color: lightblue;
         margin-right: 20px;
+        align-items: center;
+        justify-content: space-between;
+        .profile-container {
+            height: 40px;
+            width: 160px;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(227, 242, 249);
+            align-items: center;
+            .profile-img {
+                height: 35px;
+                width: 35px;
+                display: flex;
+                background-color: rgb(143, 157, 177);
+                border-radius: 50%;
+            }
+            .profile-data {
+                width: 110px;
+                height: 40px;
+                //background-color: gray;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                
+                #profile-name {
+                    font-size: 15px;
+                    margin-left: 0;
+                padding-left: 0;
+                }
+                #profile-role {
+                    font-size: 15px;
+                    margin-left: 0;
+                padding-left: 0;
+                }
+            }
+        }
     }
 }
