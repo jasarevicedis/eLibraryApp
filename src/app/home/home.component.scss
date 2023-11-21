@@ -6,20 +6,39 @@
     background-color: rgb(231, 236, 236);
     .stats-container {
         margin-top: 30px;
-        width: calc(100% - 150px);
+        width: 100%;
         display: flex;
         //background-color: white;
         height: 80px;
-        margin-left: 75px;
-        justify-content: space-between;
+        //margin-left: 75px;
+        justify-content: space-evenly;
         .stats-box {
-            width: 160px;
+            width: 200px;
             height: 80px;
             display: flex;
             background-color: lightcyan;
             border-radius: 5px;
             .stats-num {}
             .stats-p {}
+        }
+    }
+    .shortcut-tables {
+        width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        //gap: 40px;
+        margin-top: 30px;
+        .new-books-container {
+            width: 460px;
+            height: 200px;
+            display: flex;
+            background-color: white;
+        }
+        .new-students-container {
+            width: 460px;
+            height: 200px;
+            display: flex;
+            background-color: white;
         }
     }
 }
