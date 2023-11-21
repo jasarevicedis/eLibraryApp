@@ -1,7 +1,61 @@
 :host {
     width: calc(100% - 200px);
-    min-height: calc(100vh - 60px);
+    //min-height: calc(100vh - 60px);
     margin-top: 60px;
     margin-left: 200px;
-    background-color: bisque;
+    background-color: rgb(196, 252, 255);
+    .loans-header {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        width: calc(100% - 100px);
+        #loans-number {
+            font-size: 20px;
+        }
+        #add-loan {
+            width: 150px;
+            height: 35px;
+            display: flex;
+            background-color: lightseagreen;
+            border: none;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    }
+    .loans-nav {
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        margin-top: 10px;
+        height: 60px;
+        display: flex;
+        background-color: white;
+    }
+    .loans-table {
+        
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        margin-top: 20px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        thead {
+                width: 100%;
+                height: 40px;
+                background-color: lightgray;
+            tr {
+                
+                th {}
+            }
+        }
+        tbody {
+            tr {
+                height: 40px;
+            }
+            
+        }
+        margin-bottom: 100px;
+    }
 }
