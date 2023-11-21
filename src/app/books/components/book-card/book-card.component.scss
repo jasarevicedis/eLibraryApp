@@ -1,0 +1,32 @@
+:host {
+    height: 250px;
+    width: 160px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    //background-color: lightgoldenrodyellow;
+    border-radius: 12px;
+    .book-cover {
+        height: 170px;
+        width: 160px;
+        background-color: lightgrey;
+        border-radius: 12px;
+    }
+    .book-data {
+        display: flex;
+        flex-direction: column;
+        #book-title {
+            margin-top: 16px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #book-author {
+            font-size: 13px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+    }
+}
