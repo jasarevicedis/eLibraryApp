@@ -1,16 +1,36 @@
 :host {
     width: calc(100% - 200px);
-    min-height: calc(100vh - 60px);
+    //min-height: calc(100vh - 60px);
     margin-top: 60px;
     margin-left: 200px;
     background-color: rgb(234, 242, 248);
     display: flex;
     flex-direction: column;
+    .books-header {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        width: calc(100% - 100px);
+        #books-number {
+            font-size: 20px;
+        }
+        #add-book {
+            width: 150px;
+            height: 35px;
+            display: flex;
+            background-color: lightseagreen;
+            border: none;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    }
     .books-nav {
         width: calc(100% - 100px);
         margin-left: 50px;
-        margin-top: 30px;
-        height: 60px;
+        margin-top: 10px;
+        min-height: 60px;
         display: flex;
         background-color: rgb(199, 139, 139);
     }
