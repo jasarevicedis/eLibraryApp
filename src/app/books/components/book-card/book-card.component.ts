@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./book-card.component.scss']
 })
 export class BookCardComponent {
-
+  
 }
