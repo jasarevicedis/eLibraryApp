@@ -1,5 +1,117 @@
+/*
+<button class="back"></button>
+<div class="main-container">
+    <div class="book-cover-section"></div>
+    <div class="book-data-section">
+        <p class="book-title">Bald Bearded Boss</p>
+        <div class="publish-info">
+            <p class="author-name">By Elliot Holt </p>
+            <P>|</P>
+            <p class="publish-date">Feb 2020</p>
+        </div>
+        <div class="book-rating-section">
+            <p class="review-number">27</p>
+        </div>
+        <div class="book-categories-section">
+            <div class="book-category-tag">Time travel</div>
+            <div class="book-category-tag">Time travel</div>
+            <div class="book-category-tag">Time travel</div>
+        </div>
+        <p class="book-description"></p>
+    </div>
+</div>
+*/
 :host {
+    width: calc(100% - 200px);
+    min-height: calc(100vh - 60px);
+    margin-top: 60px;
+    margin-left: 200px;
+    background-color: rgb(234, 242, 248);
     display: flex;
-    width: 200px;
-    height: 200px;
-}
+    flex-direction: column;
+    .back {
+        width: 100px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        //background-color: lightblue;
+        border: none;
+        cursor: pointer;
+        background: transparent;
+        margin-top: 20px;
+        margin-left: 30px;
+        svg {
+            height: 20px;
+            width: 20px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    .main-container {
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        height: 360px;
+        //background-color: aquamarine;
+        .book-cover-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            height: 360px;
+            img {
+                width: 200px;
+                height: 300px;
+                
+            }
+        }
+        .book-data-section {
+            width: 60%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            .book-title {
+                margin-top: 25px;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .publish-info {
+                display: flex;
+                margin-top: 7px;
+            }
+            .book-rating-section {
+                display: flex;
+                margin-top: 7px;
+                align-items: center;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: orange;
+                }
+                .review-number {
+                    margin-left: 10px;
+                }
+            }
+            .book-categories-section {
+                display: flex;
+                margin-top: 20px;
+                .book-category-tag {
+                    margin-right: 10px;
+                    width: 140px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: lightblue;
+                    border-radius: 10px;
+                }
+            }
+            .book-description {
+                margin-right: 100px;
+                margin-top: 10px;
+            }
+        }
+    }
+}   
