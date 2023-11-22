@@ -19,19 +19,28 @@
         margin-right: 20px;
         align-items: center;
         justify-content: space-between;
+        
+           
+            //background-color: red;
+            .bell-icon {
+                transform: scale(1.1);
+            }
+        
         .profile-container {
             height: 40px;
-            width: 160px;
+            width: 170px;
             display: flex;
             justify-content: space-evenly;
-            background-color: rgb(227, 242, 249);
+            //background-color: rgb(227, 242, 249);
             align-items: center;
             .profile-img {
                 height: 35px;
                 width: 35px;
                 display: flex;
-                background-color: rgb(143, 157, 177);
+                //background-color: rgb(143, 157, 177);
                 border-radius: 50%;
+                background: url("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png");
+                background-size: cover;
             }
             .profile-data {
                 width: 110px;
@@ -42,12 +51,12 @@
                 justify-content: space-evenly;
                 
                 #profile-name {
-                    font-size: 15px;
+                    font-size: 14px;
                     margin-left: 0;
                 padding-left: 0;
                 }
                 #profile-role {
-                    font-size: 15px;
+                    font-size: 13px;
                     margin-left: 0;
                 padding-left: 0;
                 }

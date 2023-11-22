@@ -16,10 +16,28 @@
             width: 200px;
             height: 80px;
             display: flex;
-            background-color: lightcyan;
-            border-radius: 5px;
-            .stats-num {}
-            .stats-p {}
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            align-items: center;
+            
+            //justify-content: space-evenly;
+            svg {
+                width: 40px;
+                height: 40px;
+                margin-left: 30px;
+                fill: rgb(112, 169, 243);
+            }
+            .stats-data {
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                .stats-num {
+                    font-size: 22px;
+                }
+                .stats-p {
+                    font-size: 13px;
+                }
+            }
         }
     }
     .shortcut-tables {
@@ -35,6 +53,7 @@
             background-color: white;
             display: flex;
             flex-direction: column;
+            border-radius: 8px;
             .new-books-header {
                 display: flex;
                 width: 100%;
@@ -143,6 +162,7 @@
             background-color: white;
             display: flex;
             flex-direction: column;
+            border-radius: 8px;
             
             .new-students-header {
                 
