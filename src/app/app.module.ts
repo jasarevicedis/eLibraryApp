@@ -12,13 +12,15 @@ import { AddStudentComponent } from './students/components/add-student/add-stude
 import { AddLoanComponent } from './loans/components/add-loan/add-loan.component';
 import { BookPageComponent } from './books/components/book-page/book-page.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     AddBookComponent,
     AddStudentComponent,
     AddLoanComponent,
-    BookPageComponent
+    BookPageComponent,
+    
   ],
   imports: [
     BrowserModule,

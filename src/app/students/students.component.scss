@@ -32,30 +32,19 @@
         display: flex;
         background-color: white;
     }
-    .students-table {
+    .students-grid {
         
         width: calc(100% - 100px);
         margin-left: 50px;
         margin-top: 20px;
         min-height: 400px;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 320px);
         flex-direction: column;
-        background-color: white;
-        thead {
-                width: 100%;
-                height: 40px;
-                background-color: lightgray;
-            tr {
-                
-                th {}
-            }
-        }
-        tbody {
-            tr {
-                height: 40px;
-            }
-            
-        }
+        //background-color: white;
+        row-gap: 20px;
+        
         margin-bottom: 100px;
+        
     }
 }
