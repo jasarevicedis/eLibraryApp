@@ -9,6 +9,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 
 import { OpenAddBookService } from '../services/dialogs/open-add-book.service';
 import { OpenAddBookInstanceService } from '../services/dialogs/open-add-book-instance.service';
+import { OpenEditCategoriesService } from '../services/dialogs/open-edit-categories.service';
 
 
 @Component({
@@ -24,7 +25,8 @@ import { OpenAddBookInstanceService } from '../services/dialogs/open-add-book-in
 export class BooksComponent {
   constructor(
     private openAddBookService: OpenAddBookService,
-    private openAddInstancesService: OpenAddBookInstanceService
+    private openAddInstancesService: OpenAddBookInstanceService,
+    private openEditCategoriesService: OpenEditCategoriesService
   ) {}
 
   openAddBook(): void {
@@ -32,5 +34,8 @@ export class BooksComponent {
   }
   openAddInstances(): void {
     this.openAddInstancesService.openAddBookInstance();
+  }
+  openEditCategories(): void {
+    this.openEditCategoriesService.openEditCategories();
   }
 }
