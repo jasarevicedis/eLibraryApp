@@ -2,7 +2,31 @@
     <p id="students-number">180 students</p>
     <button id="add-student">Add student</button>
 </div>
-<div class="students-nav"></div>
+<div class="students-nav">
+    <div class="form-field">
+        <label for="category-select">Category</label>
+        <select name="category-select" id="category-select">
+            <option value="">All</option>
+            <option value="">All</option>
+            <option value="">All</option>
+            <option value="">All</option>
+        </select>
+    </div>
+    <div class="form-field">
+        <label for="order-select">Order by</label>
+        <select name="order-select" id="order-select">
+            <option value="">All</option>
+            <option value="">All</option>
+            <option value="">All</option>
+            <option value="">All</option>
+        </select>
+    </div>
+    <div class="form-field">
+        <label for="searchbar">Search</label>
+        <input type="search" name="searchbar" id="searchbar">
+    </div>
+    <button class="reset-filters">RESET</button>
+</div>
 <div class="students-grid">
     <app-student-card [routerLink]="['/students/1']" ></app-student-card>
     <app-student-card [routerLink]="['/students/1']" ></app-student-card>

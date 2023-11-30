@@ -14,8 +14,8 @@
             font-size: 20px;
         }
         #add-student {
-            width: 150px;
-            height: 35px;
+            width: 130px;
+            height: 30px;
             display: flex;
             background-color: lightseagreen;
             border: none;
@@ -28,9 +28,40 @@
         width: calc(100% - 100px);
         margin-left: 50px;
         margin-top: 10px;
-        height: 60px;
+        min-height: 60px;
         display: flex;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: space-evenly;
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 13px;
+            }
+            select {
+                width: 250px;
+                height: 30px;
+            }
+        }
+        #searchbar {
+            height: 30px;
+            width: 300px;
+        }
+        .reset-filters {
+            display: flex;
+            border: none;
+            border-radius: 8px;
+            margin-top: 5px;
+            width: 80px;
+            margin-top: 15px;
+            height: 30px;
+            background-color: rgb(195, 92, 92);
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 11px;
+        }
     }
     .students-grid {
         
