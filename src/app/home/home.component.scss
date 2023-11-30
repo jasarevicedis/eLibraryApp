@@ -1,9 +1,11 @@
 :host {
     width: calc(100% - 200px);
-    min-height: calc(100vh - 60px);
+    //min-height: calc(100vh - 60px);
     margin-top: 60px;
     margin-left: 200px;
     background-color: rgb(231, 236, 236);
+    display: flex;
+    flex-direction: column;
     .home-header {
         display: flex;
         width: 100%;
@@ -261,5 +263,15 @@
                 }
             }
         }
+    }
+    .graph-container {
+        width: calc(100% - 100px);
+        display: flex;
+        height: 500px;
+        background-color: white;
+        align-self: center;
+        margin-bottom: 100px;
+        margin-top: 50px;
+
     }
 }

@@ -7,6 +7,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
+import { OpenAddBookService } from '../services/dialogs/open-add-book.service';
+
 
 @Component({
   selector: 'app-books',
@@ -19,5 +21,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent {
-  
+  constructor(private openAddBookService: OpenAddBookService) {}
+
+  openAddBook(): void {
+    this.openAddBookService.openAddBook();
+  }
 }
