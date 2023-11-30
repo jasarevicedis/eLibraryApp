@@ -17,7 +17,7 @@ import { AddInstancesComponent } from './books/components/add-instances/add-inst
 @NgModule({
   declarations: [
     AppComponent,
-    AddBookComponent,
+    
     AddStudentComponent,
     AddLoanComponent,
     BookPageComponent,
@@ -25,6 +25,7 @@ import { AddInstancesComponent } from './books/components/add-instances/add-inst
     
   ],
   imports: [
+    AddBookComponent,
     BrowserModule,
     AppRoutingModule,
     HeaderComponent,
