@@ -2,23 +2,31 @@
     <p>Add Book</p>
     <button class="close"></button>
 </div>
-<form class="dialog-content">
+<form>
+<div class="dialog-content">
     <div class="left-section">
-
+        <upload-dropzone [uploader]="uploader" 
+                     [options]="options"
+                     [onUpdate]="onUpdate"
+                     [width]="width"
+                     [height]="height"> 
+    </upload-dropzone>
     </div>
     <div class="right-section">
-        <mat-form-field class="example-full-width">
+        <mat-form-field id="title-field">
             <mat-label>Title</mat-label>
             <input matInput placeholder="Ex. Pizza" value="Sushi">
         </mat-form-field>
-        <mat-form-field class="example-full-width">
+        <mat-form-field id="author-field">
             <mat-label>Author</mat-label>
             <input matInput placeholder="Ex. Pizza" value="Sushi">
         </mat-form-field>
-        <mat-form-field class="example-full-width">
+        <mat-form-field id="description-field">
             <mat-label>Description</mat-label>
             <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
         </mat-form-field>
 
     </div>
+</div>
+<button id="add-book-submit">Add Book</button>
 </form>

@@ -13,6 +13,7 @@ import { AddLoanComponent } from './loans/components/add-loan/add-loan.component
 import { BookPageComponent } from './books/components/book-page/book-page.component';
 import { AddInstancesComponent } from './books/components/add-instances/add-instances.component';
 import { StudentPageComponent } from './students/components/student-page/student-page.component';
+import { UploaderModule } from "angular-uploader";
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { StudentPageComponent } from './students/components/student-page/student
     MatDialogModule,
     AddInstancesComponent,
     BookPageComponent,
-    StudentPageComponent
+    StudentPageComponent,
+    UploaderModule
     
   ],
   providers: [],
