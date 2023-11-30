@@ -1,6 +1,6 @@
+@import '../../style/mixins';
 :host {
     width: calc(100% - 200px);
-    //min-height: calc(100vh - 60px);
     margin-top: 60px;
     margin-left: 200px;
     background-color: rgb(234, 242, 248);
@@ -19,33 +19,33 @@
             display: flex;
             gap: 10px;
             #add-book {
+                @include fullyCenteredContent;
                 width: 130px;
                 height: 30px;
-                display: flex;
+                
                 background-color: lightseagreen;
                 border: none;
-                align-items: center;
-                justify-content: center;
+                
                 color: white;
             }
             #add-instances {
+                @include fullyCenteredContent;
                 width: 130px;
                 height: 30px;
-                display: flex;
+                
                 background-color: lightseagreen;
                 border: none;
-                align-items: center;
-                justify-content: center;
+                
                 color: white;
             }
             #edit-categories {
+                @include fullyCenteredContent;
                 width: 130px;
                 height: 30px;
-                display: flex;
+                
                 background-color: lightseagreen;
                 border: none;
-                align-items: center;
-                justify-content: center;
+                
                 color: white;
             }
         }
@@ -55,9 +55,9 @@
         margin-left: 50px;
         margin-top: 10px;
         min-height: 60px;
-        display: flex;
+        @include horizontalyCenteredContent;
         background-color: rgb(255, 255, 255);
-        align-items: center;
+        
         justify-content: space-evenly;
         .form-field {
             display: flex;
@@ -75,7 +75,7 @@
             width: 300px;
         }
         .reset-filters {
-            display: flex;
+            @include fullyCenteredContent;
             border: none;
             border-radius: 8px;
             margin-top: 5px;
@@ -83,8 +83,7 @@
             margin-top: 15px;
             height: 30px;
             background-color: rgb(195, 92, 92);
-            align-items: center;
-            justify-content: center;
+            
             color: white;
             font-size: 11px;
         }
