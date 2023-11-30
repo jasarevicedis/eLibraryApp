@@ -15,15 +15,29 @@
         #books-number {
             font-size: 20px;
         }
-        #add-book {
-            width: 150px;
-            height: 35px;
+        .header-buttons {
             display: flex;
-            background-color: lightseagreen;
-            border: none;
-            align-items: center;
-            justify-content: center;
-            color: white;
+            gap: 10px;
+            #add-book {
+                width: 130px;
+                height: 30px;
+                display: flex;
+                background-color: lightseagreen;
+                border: none;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+            #add-instances {
+                width: 130px;
+                height: 30px;
+                display: flex;
+                background-color: lightseagreen;
+                border: none;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
         }
     }
     .books-nav {

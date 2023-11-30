@@ -8,6 +8,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
 import { OpenAddBookService } from '../services/dialogs/open-add-book.service';
+import { OpenAddBookInstanceService } from '../services/dialogs/open-add-book-instance.service';
 
 
 @Component({
@@ -21,9 +22,15 @@ import { OpenAddBookService } from '../services/dialogs/open-add-book.service';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent {
-  constructor(private openAddBookService: OpenAddBookService) {}
+  constructor(
+    private openAddBookService: OpenAddBookService,
+    private openAddInstancesService: OpenAddBookInstanceService
+  ) {}
 
   openAddBook(): void {
     this.openAddBookService.openAddBook();
+  }
+  openAddInstances(): void {
+    this.openAddInstancesService.openAddBookInstance();
   }
 }

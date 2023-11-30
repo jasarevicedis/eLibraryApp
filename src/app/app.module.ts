@@ -11,6 +11,7 @@ import { AddBookComponent } from './books/components/add-book/add-book.component
 import { AddStudentComponent } from './students/components/add-student/add-student.component';
 import { AddLoanComponent } from './loans/components/add-loan/add-loan.component';
 import { BookPageComponent } from './books/components/book-page/book-page.component';
+import { AddInstancesComponent } from './books/components/add-instances/add-instances.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { BookPageComponent } from './books/components/book-page/book-page.compon
     AddLoanComponent,
     BookPageComponent,
     
+    
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { BookPageComponent } from './books/components/book-page/book-page.compon
     HeaderComponent,
     SidebarComponent,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    AddInstancesComponent,
     
   ],
   providers: [],
