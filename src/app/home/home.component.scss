@@ -264,14 +264,119 @@
             }
         }
     }
-    .graph-container {
+    .popular-container {
         width: calc(100% - 100px);
         display: flex;
-        height: 500px;
+        height: 480px;
         background-color: white;
         align-self: center;
         margin-bottom: 100px;
         margin-top: 50px;
-
+        .popular-books-section {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .title {
+                margin-top: 20px;
+                margin-left: 20px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .popular-books-grid {
+                margin-top: 30px;
+                margin-left: 20px;
+                display: grid;
+                grid-template-columns: 300px 300px;
+                row-gap: 20px;
+                column-gap: 20px;
+                .popular-book-item {
+                    width: 300px;
+                    height: 170px;
+                    //background-color: lightcoral;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    .popular-book-cover {
+                        width: 120px;
+                        height: 90%;
+                        display: flex;
+                        background-color: burlywood;
+                    }
+                    .popular-book-data {
+                        width: 170px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .popular-book-author {
+                            margin-left: 20px;
+                            font-size: 15px;
+                            margin-top: 20px;
+                        }
+                        .popular-book-title {
+                            margin-left: 20px;
+                            font-size: 15px;
+                            font-weight: bold;
+                            margin-top: 10px;
+                            height: 50px;
+                        }
+                        .popular-book-stats {
+                            margin-left: 20px;
+                            font-size: 13px;
+                        }
+                        .view {
+                            margin-top: 10px;
+                            margin-left: 20px;
+                            width: 100px;
+                            height: 25px;
+                            border-radius: 15px;
+                            border: none;
+                            background-color: lightgray;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .top-authors-section {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .title {
+                margin-top: 20px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .top-authors-list {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 40px;
+                gap: 10px;
+                .top-author-item {
+                    width: 90%;
+                    height: 70px;
+                    //border: 1px solid black;
+                    display: flex;
+                    //justify-content: space-evenly;
+                    align-items: center;
+                    .top-author-img {
+                        height: 60px;
+                        width: 60px;
+                        display: flex;
+                        background-color: lightgreen;
+                        border-radius: 50%;
+                    }
+                    .top-author-data {
+                        margin-left: 10px;
+                        height: 40px;
+                        width: 200px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
     }
 }
