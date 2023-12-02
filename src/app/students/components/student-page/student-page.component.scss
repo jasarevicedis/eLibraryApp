@@ -27,22 +27,91 @@
             font-size: 20px;
         }
     }
-    .student-image-container {
+    .main-container {
+        margin-top: 100px;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40%;
-        height: 360px;
-        img {
+        justify-content: space-evenly;
+        .student-image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 200px;
-            height: 300px;
-            
+            height: 200px;
+            //background-color: red;
+            img {
+                width: 100%;
+                border-radius: 50%;
+                height: 100%;
+                background-color: lightblue;
+                
+            }
+        }
+        .student-data-container {
+            //background-color: lightcoral;
+            width: 600px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            .profile-name {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .mail-section {
+                height: 30px;
+                width: 250px;
+                //background-color: lightgreen;
+                margin-top: 20px;
+            }
+            .phone-section {
+                height: 30px;
+                width: 250px;
+                //background-color: lightgreen;
+                margin-top: 20px;
+            }
         }
     }
-    .student-data-container {
-        width: 60%;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
+    .preffered-title {
+        margin-top: 100px;
+        font-size: 20px;
+        margin-left: 100px;
     }
+    .preffered-section {
+        margin-left: 100px;
+        margin-top: 30px;
+        height: 40px;
+        width: calc(100% - 200px);
+        display: flex;
+        //background-color: lightgreen;
+        .category-box {
+            width: 180px;
+            height: 40px;
+            background-color: lightgreen;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+    }
+    .stats-nav {
+        margin-top: 50px; 
+        margin-left: 100px;
+        width: calc(100% - 200px);
+        margin-bottom: 200px;
+        .tab {
+            height: 200px;
+            width: 100%;
+            display: flex;
+        }
+        .stats-tab {
+            //background-color: red;
+        }
+        
+        
+    }
+    
+
 }   

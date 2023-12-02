@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   standalone:true,
   imports: [
-    RouterModule
+    RouterModule, MatTabsModule
   ],
   selector: 'app-student-page',
   templateUrl: './student-page.component.html',
