@@ -19,4 +19,44 @@
             height: 20px;
         }
     }
+    .categories-grid {
+        display: grid;
+        margin-top: 20px;
+        width: 660px;
+        align-self: center;
+        height: 380px;
+        grid-template-columns: repeat(auto-fit, 170px);
+        .category-item {
+            width: 160px;
+            height: 30px;
+            background-color: rgb(132, 211, 237);
+            display: flex;
+            border-radius: 8px;
+            align-items: center;
+            justify-content:space-between;
+            p {
+                margin-left: 20px;
+                color: white;
+            }
+            .delete-category-x {
+                color: white;
+                margin-right: 10px;
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
+    .add-category {
+        margin-top: 20px;
+        height: 30px;
+        width: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: lightseagreen;
+        align-self: center;
+        border: none;
+        border-radius: 8px;
+    }
 }
