@@ -12,7 +12,7 @@
         font-size: 20px;
     }
     .nav {
-        width: 240px;
+        width: 230px;
     
         height: 40px;
         display: flex;
@@ -23,9 +23,23 @@
         
            
             //background-color: red;
-            .bell-icon {
-                transform: scale(1.1);
-                margin-right: 10px;
+            .notification-button {
+                border-radius: 5px;
+                width: 35px;
+                height: 35px;
+                background-color: rgb(255, 255, 255);
+                //margin-right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    width: 22px;
+                    height: 22px;
+                    fill: grey;
+                }
+            }
+            .notification-button:hover {
+                background-color: rgb(240, 240, 240);
             }
         
         .profile-container {
@@ -175,6 +189,50 @@
                   .slider.round:before {
                     border-radius: 50%;
                   }
+            }
+        }
+    }
+}
+.notification-menu {
+    position: absolute;
+    width: 380px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 0.5px solid rgb(235, 235, 235);
+    top: 62px;
+    right: 200px;
+    display: none;
+    &.active-notification-menu {
+        display: flex;
+        flex-direction: column;
+        .notifications-header {
+            display: flex;
+            align-items: center;
+            //margin-left: 10px;
+            p {
+                font-size: 13px;
+            }
+            height: 50px;
+            width: 100%;
+        }
+        .notifications-box {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(241, 241, 241);
+            display: flex;
+        }
+        .notifications-footer {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                text-decoration: none;
+                color: #2196F3;
+                font-size: 15px;
+                font-weight: bold;
             }
         }
     }

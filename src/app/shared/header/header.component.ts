@@ -14,8 +14,11 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class HeaderComponent {
   isProfileClicked = false;
-
+  isNotificationClicked = false;
   toggleProfileMenu(): void {    
     this.isProfileClicked = !this.isProfileClicked;
+  }
+  toggleNotificationMenu(): void {
+    this.isNotificationClicked = !this.isNotificationClicked;
   }
 }
