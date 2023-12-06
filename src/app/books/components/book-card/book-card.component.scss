@@ -58,14 +58,26 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 1px solid rgb(141, 141, 141);
+            svg {
+                width: 15px;
+                height: 15px;
+            }
         }
         #edit-book {
-            background-color: rgb(185, 189, 187);
+            background-color: rgb(206, 243, 255);
+            svg {
+                //fill: rgb(177, 177, 245);;
+            }
         }
         #delete-book {
             background-color: rgb(240, 70, 70);
+            svg {
+                fill: white;
+            }
         }
 
     }
