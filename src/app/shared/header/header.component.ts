@@ -13,5 +13,9 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isProfileClicked = false;
 
+  toggleProfileMenu(): void {    
+    this.isProfileClicked = !this.isProfileClicked;
+  }
 }

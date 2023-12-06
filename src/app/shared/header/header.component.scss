@@ -12,7 +12,8 @@
         font-size: 20px;
     }
     .nav {
-        width: 200px;
+        width: 240px;
+    
         height: 40px;
         display: flex;
         //background-color: lightblue;
@@ -24,18 +25,21 @@
             //background-color: red;
             .bell-icon {
                 transform: scale(1.1);
+                margin-right: 10px;
             }
         
         .profile-container {
-            height: 40px;
-            width: 170px;
+            border-radius: 5px;
+            //background-color: lightblue;
+            height: 50px;
+            width: 190px;
             display: flex;
             justify-content: space-evenly;
             //background-color: rgb(227, 242, 249);
             align-items: center;
             .profile-img {
-                height: 35px;
-                width: 35px;
+                height: 30px;
+                width: 30px;
                 display: flex;
                 //background-color: rgb(143, 157, 177);
                 border-radius: 50%;
@@ -51,20 +55,127 @@
                 justify-content: space-evenly;
                 
                 #profile-name {
-                    font-size: 14px;
-                    margin-left: 0;
-                padding-left: 0;
-                }
-                #profile-role {
                     font-size: 13px;
                     margin-left: 0;
                 padding-left: 0;
                 }
+                #profile-role {
+                    font-size: 12px;
+                    margin-left: 0;
+                padding-left: 0;
+                color: grey;
+                }
             }
+            svg {
+                width: 13px;
+                height: 13px;
+                fill: grey;
+            }
+        }
+        .profile-container:hover {
+            border: 0.5px solid rgb(229, 227, 227);
+            margin-right: -1px;//prevents moving when hovered
         }
         .menu {
             width: 200px;
             background-color: red;
+        }
+    }
+}
+.profile-menu {
+    position: absolute;
+    width: 190px;
+    height: 160px;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    top: 62px;
+    right: 20px;
+    &.active-profile-menu {
+        display: flex;
+        border-radius: 5px;
+        border: 0.5px solid rgb(232, 231, 231);
+        ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            li {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 40px;
+                //border-bottom: 1px solid grey;
+                p {
+                    font-size: 13px;
+                }
+            }
+            li:hover {
+                background-color: rgb(232, 232, 232);
+            }
+            #dark-mode {
+                display: flex;
+                gap: 10px;
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 50px;
+                    height: 25px;
+                  }
+                  
+                  /* Hide default HTML checkbox */
+                  .switch input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                  }
+                  
+                  /* The slider */
+                  .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                  }
+                  
+                  .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 24px;
+                    width: 24px;
+                    left: 1px;
+                    bottom: 1px;
+                    background-color: white;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                  }
+                  
+                  input:checked + .slider {
+                    background-color: #2196F3;
+                  }
+                  
+                  input:focus + .slider {
+                    box-shadow: 0 0 1px #2196F3;
+                  }
+                  
+                  input:checked + .slider:before {
+                    -webkit-transform: translateX(24px);
+                    -ms-transform: translateX(24px);
+                    transform: translateX(24px);
+                  }
+                  
+                  /* Rounded sliders */
+                  .slider.round {
+                    border-radius: 21px;
+                  }
+                  
+                  .slider.round:before {
+                    border-radius: 50%;
+                  }
+            }
         }
     }
 }
