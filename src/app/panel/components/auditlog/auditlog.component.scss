@@ -1,0 +1,29 @@
+:host {
+    width: 100%;
+    //min-height: calc(100vh - 60px);
+   
+    background-color: rgb(234, 242, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .audit-log-header {
+        width: 600px;
+        height: 60px;
+        display: flex;
+        background-color: lightblue;
+        margin-top: 10px;
+    }
+    .logs-container {
+        margin-top: 20px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        .log-item {
+            width: 600px;
+            height: 60px;
+            display: flex;
+            border: 1px solid black;
+            margin-bottom: 5px;
+        }
+    }
+}
