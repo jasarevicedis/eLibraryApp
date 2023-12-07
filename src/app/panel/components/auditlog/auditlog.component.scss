@@ -5,12 +5,14 @@
     background-color: rgb(234, 242, 248);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
+    margin-left: 50px;
     .audit-log-header {
         width: 600px;
         height: 60px;
         display: flex;
-        background-color: lightblue;
+        align-items: center;
+        //background-color: lightblue;
         margin-top: 10px;
     }
     .logs-container {
@@ -19,11 +21,34 @@
         display: flex;
         flex-direction: column;
         .log-item {
+            border-radius: 10px;
             width: 600px;
             height: 60px;
             display: flex;
-            border: 1px solid black;
+            border: 1px solid rgb(177, 177, 177);
             margin-bottom: 5px;
+            align-items: center;
+            .log-img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                background-color: lightblue;
+                margin-left: 10px;
+            }
+            .log-data {
+                margin-left: 10px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .log-text {
+                    font-size: 17px;
+                }
+                .log-date {
+                    font-size: 13px;
+                }
+            }
         }
     }
 }

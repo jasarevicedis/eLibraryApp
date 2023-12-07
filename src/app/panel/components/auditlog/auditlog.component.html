@@ -1,17 +1,18 @@
-<div class="audit-log-header"></div>
+<div class="audit-log-header">
+    <p>Audit log</p>
+    <div class="log-nav">
+        <div class="filter-by-user"></div>
+        <div class="filter-by-action"></div>
+    </div>
+</div>
 <div class="logs-container">
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
-    <div class="log-item"></div>
+    <div *ngFor="let item of itemsArray" class="log-item">
+        <div class="log-img"></div>
+        <div class="log-data">
+            <p class="log-text">Admin updated credentials for ahadhahdahahhahah</p>
+            <p class="log-date">11/18/2023</p>
+        </div>
+    </div>
+    
 
 </div>
