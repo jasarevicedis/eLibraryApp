@@ -7,6 +7,10 @@ import { LoansComponent } from './loans/loans.component';
 import { BookPageComponent } from './books/components/book-page/book-page.component';
 import { StudentPageComponent } from './students/components/student-page/student-page.component';
 import { AuthComponent } from './auth/auth.component';
+import { PanelComponent } from './panel/panel.component';
+import { ProfileComponent } from './panel/components/profile/profile.component';
+import { SettingsComponent } from './panel/components/settings/settings.component';
+import { AuditlogComponent } from './panel/components/auditlog/auditlog.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -15,7 +19,12 @@ const routes: Routes = [
   {path: 'students', component: StudentsComponent},
   {path: 'students/1', component: StudentPageComponent},
   {path: 'loans', component: LoansComponent},
-  {path: 'login', component: AuthComponent}
+  {path: 'login', component: AuthComponent},
+  {path: 'panel', component: PanelComponent, children:[
+    {path:'profile', component: ProfileComponent},
+    {path:'settings', component: SettingsComponent},
+    {path:'auditlog', component:AuditlogComponent}
+  ]}
 ];
 
 @NgModule({
