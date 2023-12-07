@@ -1,0 +1,35 @@
+:host {
+    width: calc(100% - 200px);
+    //min-height: calc(100vh - 60px);
+    margin-top: 60px;
+    margin-left: 200px;
+    background-color: rgb(234, 242, 248);
+    display: flex;
+    flex-direction: column;
+    .close {
+        margin-top: 20px;
+        align-self: auto;
+        height: 40px;
+        width: 100px;
+        display: flex;
+        background-color: red;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .stats-nav {
+        display: flex;
+        margin-left: 50px;
+        border-bottom: 1px solid lightgray;
+        .nav-link {
+            cursor: pointer;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+        .active {
+            border-bottom: 2px solid lightskyblue;
+        }
+    }
+}
