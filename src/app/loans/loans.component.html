@@ -7,26 +7,46 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Name</th>
+            <th>Student</th>
             <th>Book</th>
-            <th>Book Id</th>
+            
             <th>Loan date</th>
+            <th>Due date</th>
             <th>Return date</th>
             <th>Status</th>
         </tr>        
     </thead>
     <tbody>
-        <tr>
+        <tr *ngFor="let item of itemsArray">
             <td>1</td>
-            <td>Edis Jasarevic</td>
-            <td>Na Drini Cuprija</td>
-            <td>#67bc7a</td>
+            <td>
+                <div class="student-img"></div>
+                <div class="student-data">
+                    <p class="student-name">Edis Jasarevic</p>
+                    <p class="student-mail">e.jasarevic03@gmail.com</p>
+                </div>
+            </td>
+            <td>
+                <div class="book-img"></div>
+                <div class="book-data">
+                    <p class="book-id">#623ab7</p>
+                    <p class="book-name">Kako ukrotiti zmaja</p>
+                </div>
+            </td>
+            
             <td>27 Feb 2020</td>
             <td>13 Mar 2020</td>
+            <th>13 Mar 2020</th>
             <td><div class="status-tag">Returned on time</div></td>
         </tr>
         
         
+        
     </tbody>
 </table>
+<mat-paginator class="paginator" [length]="100"
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 25, 100]"
+    aria-label="Select page">
+</mat-paginator>
 

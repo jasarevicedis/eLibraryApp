@@ -3,7 +3,7 @@
     //min-height: calc(100vh - 60px);
     margin-top: 60px;
     margin-left: 200px;
-    background-color: rgb(196, 252, 255);
+    background-color: rgb(243, 243, 243);
     .loans-header {
         margin-top: 20px;
         display: flex;
@@ -34,7 +34,7 @@
     }
     .loans-table {
         
-        width: calc(100% - 100px);
+        width: 970px;
         margin-left: 50px;
         margin-top: 20px;
         min-height: 400px;
@@ -42,120 +42,217 @@
         flex-direction: column;
         background-color: white;
         thead {
-                width: 100%;
-                height: 40px;
+
+                width: 970px;
+                height: 48px;
                 background-color: lightgray;
+                font-weight: normal;
+
             tr {
+                width: 970px;
                 display: flex;
                 //background-color: red;
-                height: 40px; 
+                height: 48px; 
                 align-items: center;
+                font-weight: normal;
                 
                 :nth-child(1) {
                     //background-color: blue;
                     width: 40px;
+                font-weight: normal;
+                    
                 }
                 :nth-child(2) {
                     display: flex;
                     justify-content: start;
-                    width: 150px;
+                    width: 300px;
+                font-weight: normal;
+
                 }
                 :nth-child(3) {
                     display: flex;
                     justify-content: start;
-                    width: 200px;
+                    width: 300px;
+                font-weight: normal;
+                    
                 }
                 :nth-child(4) {
                     display: flex;
                     justify-content: start;
                     width: 100px;
+                font-weight: normal;
+
                 }
                 :nth-child(5) {
                     display: flex;
                     justify-content: start;
-                    width: 150px;
+                    width: 100px;
+                font-weight: normal;
+
                 }
                 :nth-child(6) {
                     display: flex;
                     justify-content: start;
-                    width: 150px;
+                    width: 100px;
+                font-weight: normal;
+
                 }
                 :nth-child(7) {
                     display: flex;
                     justify-content: start;
                     width: 150px;
+                font-weight: normal;
+
                 }
             }
         }
         tbody {
-            width: 100%;
-            height: 40px;
+            width: 970px;
+            //height: 40px;
             //background-color: lightgray;
+            tr:hover {
+                background-color: rgb(237, 255, 254);
+                cursor: pointer;
+            }
         tr {
+            width: 970px;
             display: flex;
             //background-color: red;
-            height: 40px; 
+            height: 48px; 
             align-items: center;
             
             :nth-child(1) {
                 //background-color: blue;
-                width: 30px;
+                width: 40px;
                 display: flex;
-                margin-left: 10px;
+                justify-content: center;
+                align-items: center;
                 //padding-left: 10px;
             }
             :nth-child(2) {
                 display: flex;
                 justify-content: start;
-                width: 150px;
-                font-weight: bold;
+                width: 300px;
+                //background-color: lightblue;
+                
+                height: 100%;
                 color: grey;
+                
+                .student-img {
+                    margin-top: 9px;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    background-color: lightgrey;
+                    border-radius: 50%;
+                }
+                .student-data {
+                    margin-top: 9px;
+
+                    display: flex;
+                    flex-direction: column;
+                    width: 200px;
+                    height: 39px;
+                    justify-content: space-evenly;
+                    margin-left: 10px;
+                    //background-color: red;
+                    .student-name {
+                        font-size: 13px;
+                        width: 200px;
+                        //background-color: lightblue;
+                        align-items: start;
+                        justify-content: start;
+                    }
+                    .student-mail {
+                        font-size: 13px;
+                    }
+                }
             }
             :nth-child(3) {
                 display: flex;
-                justify-content: start;
-                width: 200px;
-                font-weight: bold;
+                height: 100%;
+                
+                //background-color: lightcyan;
+                width: 300px;
+                //font-weight: bold;
                 color: rgb(128, 128, 128);
+                .book-img {
+                    margin-top: 9px;
+                    width: 20px;
+                    height: 30px;
+                    display: flex;
+                    background-color: lightgrey;
+                    //border-radius: 50%;
+                }
+                .book-data {
+                    margin-top: 9px;
+
+                    display: flex;
+                    flex-direction: column;
+                    width: 240px;
+                    height: 39px;
+                    justify-content: space-evenly;
+                    margin-left: 10px;
+                    .book-id {
+                        font-size: 13px;
+                        
+                        margin-left: 0px;
+                    }
+                    .book-name {
+                        font-size: 13px;
+                    }
+                }
             }
             :nth-child(4) {
+                
+                //background-color: red;
                 display: flex;
                 justify-content: start;
                 width: 100px;
+                //height: 100%;
                 font-size: 13px;
+                
             }
             :nth-child(5) {
                 display: flex;
                 justify-content: start;
-                width: 150px;
+                width: 100px;
                 font-size: 13px;
 
             }
             :nth-child(6) {
                 display: flex;
                 justify-content: start;
-                width: 150px;
+                width: 100px;
                 font-size: 13px;
+                font-weight: normal;
 
             }
             :nth-child(7) {
                 display: flex;
                 justify-content: start;
-                //width: 150px;
+                width: 150px;
                 
                 .status-tag {
+                    margin-right: 10px;
                     background-color: rgb(124, 203, 240);
-                    width: 130px;
+                    width: 110px;
                     height: 25px;
                     border-radius: 8px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    font-size: 13px;
+                    font-size: 11px;
                 }
             }
         }
     }
+        //margin-bottom: 30px;
+    }
+    .paginator {
+        width: 970px;
+        margin-left: 50px;
         margin-bottom: 100px;
+        background-color: lightgray;
     }
 }
