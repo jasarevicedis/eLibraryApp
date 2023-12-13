@@ -1,0 +1,9 @@
+:host {
+    width: calc(100% - 50px);
+    //min-height: calc(100vh - 60px);
+   
+    background-color: rgb(234, 242, 248);
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
