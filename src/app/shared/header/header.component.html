@@ -22,7 +22,7 @@
         <li id="dark-mode">
             <p>Dark mode</p>
             <label class="switch">
-                <input type="checkbox">
+                <input (toggle)="toggleDarkMode()" type="checkbox">
                 <span class="slider round"></span>
               </label>
         </li>
@@ -32,7 +32,35 @@
     <div class="notifications-header">
         <p>Notifications</p>
     </div>
-    <div class="notifications-box"></div>
+    <div class="notifications-box">
+        <div class="notification-item">
+            <div class="notification-cover-img"></div>
+            <p class="notification-text">Book rent period has ended | 8h</p>
+            <button class="options"></button>
+        </div>
+        <div class="notification-item">
+            <div class="notification-cover-img"></div>
+            <p class="notification-text">Book rent period has ended | 8h</p>
+            <button class="options"></button>
+        </div>
+        <div class="notification-item">
+            <div class="notification-cover-img"></div>
+            <p class="notification-text">Book rent period has ended | 8h</p>
+            <button class="options"></button>
+        </div>
+        <div class="notification-item">
+            <div class="notification-cover-img"></div>
+            <p class="notification-text">Book rent period has ended | 8h</p>
+            <button class="options"></button>
+        </div>
+        <div class="notification-item">
+            <div class="notification-cover-img"></div>
+            <p class="notification-text">Book rent period has ended | 8h</p>
+            <button class="options"></button>
+        </div>
+        
+        
+    </div>
     <div class="notifications-footer">
         <a href="">SEE ALL</a>
     </div>

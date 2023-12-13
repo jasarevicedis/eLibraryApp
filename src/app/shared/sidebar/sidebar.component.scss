@@ -30,8 +30,13 @@
         }
         
     }
+    .dark-mode-sidebar {
+        background-color: black;
+    }
     
-    
+}
+:host .dark-mode-sidebar {
+    background-color: black;
 }
 .menu {
     gap: 5px;

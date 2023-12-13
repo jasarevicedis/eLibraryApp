@@ -5,6 +5,7 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { RouterModule } from '@angular/router';
+import { DarkmodeService } from 'src/app/services/ui/darkmode.service';
 
 @Component({
   selector: 'app-header',
@@ -16,6 +17,12 @@ import { RouterModule } from '@angular/router';
 export class HeaderComponent {
   isProfileClicked = false;
   isNotificationClicked = false;
+  
+  constructor(private darkModeService: DarkmodeService) {}
+
+  toggleDarkMode() {
+    this.darkModeService.toggleDarkMode();
+  }
   toggleProfileMenu(): void {    
     this.isProfileClicked = !this.isProfileClicked;
   }

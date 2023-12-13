@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DarkmodeService } from './services/ui/darkmode.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(public darkModeService: DarkmodeService) {}
   title = 'eLibraryApp';
 }
