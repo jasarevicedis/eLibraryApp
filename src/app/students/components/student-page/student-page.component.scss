@@ -4,7 +4,8 @@
     //min-height: calc(100vh - 60px);
     margin-top: 60px;
     margin-left: 200px;
-    background-color: rgb(234, 242, 248);
+    background-color: #f0f1f3;
+    
     display: flex;
     flex-direction: column;
     .page-header {
@@ -154,6 +155,20 @@
                 background-color: white;
                 border-radius: 10px;
                 display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                .stats-name {
+                    font-size: 16px;
+                }
+                svg {
+                    height: 50px;
+                    width: 50px;
+                }
+                .stats-value {
+                    font-size: 20px;
+                }
             }
         }
         .calendar-tab {
