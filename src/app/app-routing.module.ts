@@ -11,6 +11,7 @@ import { PanelComponent } from './panel/panel.component';
 import { ProfileComponent } from './panel/components/profile/profile.component';
 import { SettingsComponent } from './panel/components/settings/settings.component';
 import { AuditlogComponent } from './panel/components/auditlog/auditlog.component';
+import { NotificationsComponent } from './panel/components/notifications/notifications.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'panel', component: PanelComponent, children:[
     {path:'profile', component: ProfileComponent},
     {path:'settings', component: SettingsComponent},
+    {path: 'notifications', component: NotificationsComponent},
     {path:'auditlog', component:AuditlogComponent}
   ]}
 ];

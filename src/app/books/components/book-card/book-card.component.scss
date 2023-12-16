@@ -13,7 +13,7 @@
     .book-cover {
         height: 170px;
         width: 160px;
-        background-color: lightgrey;
+        background-color: rgb(255, 255, 255);
         border-radius: 12px;
         display: flex;
         align-items: center;
@@ -44,7 +44,7 @@
     
 }
 :host:hover {
-    background-color: lightblue;
+    background-color: rgb(186, 238, 255);
     .crud-buttons {
         display: flex;
         position: absolute;
@@ -82,6 +82,7 @@
 
     }
     .book-cover {
-        background-color: lightblue;
+    background-color: rgb(186, 238, 255);
+        
     }
 }
