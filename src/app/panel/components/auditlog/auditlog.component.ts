@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./auditlog.component.scss']
 })
 export class AuditlogComponent {
+  
   itemsArray = new Array(20).fill(0);
 
 }

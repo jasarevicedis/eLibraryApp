@@ -1,17 +1,31 @@
 <div class="audit-log-header">
     <p>Audit log</p>
     <div class="log-nav">
-        <div class="filter-by-user"></div>
-        <div class="filter-by-action"></div>
+        <div class="filter-by-user">
+            <p>Filter by user</p>
+            <button class="filter-user-button">All</button>
+            <div class="user-dropdown">
+                <div class="search-bar"></div>
+                <input type="radio" name="" id="">
+            </div>
+        </div>
+        <div class="filter-by-action">
+            <p>Filter by action</p>
+            <button class="filter-user-button">All</button>
+            <div class="action-dropdown"></div>
+        </div>
     </div>
 </div>
 <div class="logs-container">
     <div *ngFor="let item of itemsArray" class="log-item">
-        <div class="log-img"></div>
-        <div class="log-data">
-            <p class="log-text">Admin updated credentials for ahadhahdahahhahah</p>
-            <p class="log-date">11/18/2023</p>
+        <div class="main">
+            <div class="log-img"></div>
+            <div class="log-data">
+                <p class="log-text">Admin updated credentials for ahadhahdahahhahah</p>
+                <p class="log-date">11/18/2023</p>
+            </div>
         </div>
+        <div class="expanded"></div>
     </div>
     
 
