@@ -128,6 +128,152 @@
             }
         }
     }
+    .book-nav {
+        margin-left: 100px;
+        width: calc(100% - 200px);
+        .author-tab {
+            margin-left: 50px;
+            width: calc(100% - 100px);
+            height: 300px;
+            display: flex;
+            background-color: white;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            .left-section {
+                width: 200px;
+                height: 100%;
+                display: flex;
+                //background-color: red;
+                align-items: center;
+                justify-content: center;
+                .author-img {
+                    width: 160px;
+                    height: 160px;
+                    display: flex;
+                    border-radius: 50%;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .right-section {
+                width: calc(100% - 200px);
+                height: 100%;
+
+                .author-name {
+                    margin-top: 10px;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .author-description {
+                    width: calc(100% - 20px);
+                    height: 100px;
+                    margin-top: 10px;
+                    //background-color: lightblue;
+                }
+                .more {
+                    font-size: 13px;
+                    margin-top: 10px;
+                }
+                .more-books {
+                    margin-top: 5px;
+                    width: 100%;
+                    height: 110px;
+                    display: flex;
+                    gap: 20px;
+                    //background-color: lightblue;
+                    img {
+                        
+                        height: 110px;
+                        //width: 40px;
+                        display: flex;
+                    }
+                }
+            }
+        }
+        .reviews-tab {
+            margin-left: 50px;
+            width: calc(100% - 100px);
+            //min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            //background-color: white;
+            margin-top: 50px;
+            margin-bottom: 200px;
+            .review-item {
+                width: 100%;
+                display: flex;
+                min-height: 100px;
+                background-color: white;
+                border-radius: 10px;
+                margin-top: 10px;
+                .left-section {
+                    width: 100px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    //background-color: red;
+                    align-items: center;
+                    .profile-img {
+                        margin-top: 30px;
+                        width: 75px;
+                        height: 75px;
+                        background-color: lightgrey;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-bottom: 50%;
+                        }
+                    }
+                    
+                }
+                .right-section {
+                    width: calc(100% - 100px);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .name {
+                        font-size: 15px;
+                        margin-top: 10px;
+                    }
+                    .rate-section {
+                        svg {
+                            fill: orange;
+                        }
+                        height: 20px;
+                        display: flex;
+                        width: 200px;
+                        margin-top: 5px;
+                        gap: 5px;
+                        //background-color: lightblue;
+                    }
+                    .review-section {
+                        margin-top: 5px;
+                        min-height: 80px;
+                        display: flex;
+                        width: calc(100% - 20px);
+                        background-color: rgb(219, 226, 229);
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .history-tab {
+            padding-top: 30px;
+            .history-item {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                background-color: white;
+                border-radius: 8px;
+                margin-top: 10px;
+            }
+        }
+    }
+    /*
     .lower-section {
         //justify-content: space-evenly;
         display: flex;
@@ -168,5 +314,5 @@
                 margin-bottom: 100px;
             }
         }
-    }
+    }*/
 }   
