@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DeleteBookComponent } from 'src/app/books/components/delete-book/delete-book.component';
+import { DeleteBookComponent } from 'src/app/features/books/components/delete-book/delete-book.component';
 
 
 @Injectable({

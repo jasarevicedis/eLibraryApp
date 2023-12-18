@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DeleteStudentComponent } from 'src/app/students/components/delete-student/delete-student.component';
+import { DeleteStudentComponent } from 'src/app/features/students/components/delete-student/delete-student.component';
 
 @Injectable({
   providedIn: 'root'

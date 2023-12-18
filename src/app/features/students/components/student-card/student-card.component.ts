@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OpenEditStudentService } from 'src/app/services/dialogs/open-edit-student.service';
-import { OpenDeleteStudentService } from 'src/app/services/dialogs/open-delete-student.service';
+import { OpenEditStudentService } from 'src/app/core/services/dialogs/open-edit-student.service';
+import { OpenDeleteStudentService } from 'src/app/core/services/dialogs/open-delete-student.service';
 
 @Component({
   selector: 'app-student-card',

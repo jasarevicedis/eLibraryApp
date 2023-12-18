@@ -5,7 +5,7 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { RouterModule } from '@angular/router';
-import { DarkmodeService } from 'src/app/services/ui/darkmode.service';
+import { DarkmodeService } from 'src/app/core/services/ui/darkmode.service';
 
 @Component({
   selector: 'app-header',

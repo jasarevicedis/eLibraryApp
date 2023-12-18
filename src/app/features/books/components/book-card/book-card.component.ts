@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OpenEditBookService } from 'src/app/services/dialogs/open-edit-book.service';
-import { OpenDeleteBookService } from 'src/app/services/dialogs/open-delete-book.service';
+import { OpenEditBookService } from 'src/app/core/services/dialogs/open-edit-book.service';
+import { OpenDeleteBookService } from 'src/app/core/services/dialogs/open-delete-book.service';
 
 @Component({
   selector: 'app-book-card',

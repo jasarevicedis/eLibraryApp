@@ -56,6 +56,7 @@
         height: 360px;
         //background-color: aquamarine;
         .book-cover-section {
+            //background-color: red;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -127,31 +128,45 @@
             }
         }
     }
-    .rent-history-header {
-        //width: 100%;
+    .lower-section {
+        //justify-content: space-evenly;
         display: flex;
-        //background-color: red;
-        margin-top: 20px;
-        margin-left: 100px;
-        p {
-            font-size: 20px;
+        .about-author {
+            margin-left: 50px;
+            width: 330px;
+            height: 300px;
+            display: flex;
+            background-color: white;
+            margin-top: 50px;
         }
-    }
-    .rent-history-row {
-        width: 700px;
-        height: 50px;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        p {
-            margin-left: 30px;
+        .rent-history {
+            .rent-history-header {
+                //width: 100%;
+                display: flex;
+                //background-color: red;
+                margin-top: 20px;
+                margin-left: 50px;
+                p {
+                    font-size: 20px;
+                }
+            }
+            .rent-history-row {
+                width: 500px;
+                height: 50px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                p {
+                    margin-left: 30px;
+                }
+                border-radius: 8px;
+                //border: 1px solid black;
+                margin-left: 50px;
+                margin-top: 10px;
+            }
+            .rent-history-row:last-of-type {
+                margin-bottom: 100px;
+            }
         }
-        border-radius: 8px;
-        //border: 1px solid black;
-        margin-left: 100px;
-        margin-top: 10px;
-    }
-    .rent-history-row:last-of-type {
-        margin-bottom: 100px;
     }
 }   

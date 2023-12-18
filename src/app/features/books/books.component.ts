@@ -7,9 +7,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
-import { OpenAddBookService } from '../services/dialogs/open-add-book.service';
-import { OpenAddBookInstanceService } from '../services/dialogs/open-add-book-instance.service';
-import { OpenEditCategoriesService } from '../services/dialogs/open-edit-categories.service';
+import { OpenAddBookService } from '../../core/services/dialogs/open-add-book.service';
+import { OpenAddBookInstanceService } from '../../core/services/dialogs/open-add-book-instance.service';
+import { OpenEditCategoriesService } from '../../core/services/dialogs/open-edit-categories.service';
 
 
 @Component({
