@@ -8,6 +8,7 @@ import { EditStudentComponent } from 'src/app/features/students/components/edit-
 export class OpenEditStudentService {
 
   constructor(private dialog: MatDialog) { }
+  
   openEditStudent(): void {
     this.dialog.open(EditStudentComponent, {}); 
   }

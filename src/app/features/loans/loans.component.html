@@ -1,6 +1,6 @@
 <div class="loans-header">
     <p id="loans-number">180 rents currently</p>
-    <button id="add-loan">Add loan</button>
+    <button (click)="openAddLoan()" id="add-loan">Add loan</button>
 </div>
 <div class="loans-nav"></div>
 <table class="loans-table">
@@ -17,7 +17,7 @@
         </tr>        
     </thead>
     <tbody>
-        <tr *ngFor="let item of itemsArray">
+        <tr *ngFor="let item of itemsArray" (click)="openEditLoan()" >
             <td>1</td>
             <td>
                 <div class="student-img"></div>
@@ -37,7 +37,10 @@
             <td>27 Feb 2020</td>
             <td>13 Mar 2020</td>
             <th>13 Mar 2020</th>
-            <td><div class="status-tag">Returned on time</div></td>
+            <td>
+                <div class="status-tag">Returned on time</div>
+                
+            </td>
         </tr>
         
         

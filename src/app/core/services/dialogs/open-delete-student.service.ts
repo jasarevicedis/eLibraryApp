@@ -8,6 +8,7 @@ import { DeleteStudentComponent } from 'src/app/features/students/components/del
 export class OpenDeleteStudentService {
 
   constructor(private dialog: MatDialog) { }
+  
   openDeleteStudent(): void {
     this.dialog.open(DeleteStudentComponent, {});
   }

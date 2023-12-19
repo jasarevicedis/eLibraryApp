@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { OpenEditStudentService } from 'src/app/core/services/dialogs/open-edit-student.service';
 import { OpenDeleteStudentService } from 'src/app/core/services/dialogs/open-delete-student.service';
 
+
 @Component({
   selector: 'app-student-card',
   standalone: true,
@@ -25,4 +26,5 @@ export class StudentCardComponent {
     this.openDeleteStudentService.openDeleteStudent();
     
   }
+  
 }
