@@ -25,7 +25,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent implements OnInit {
-  booksList: any;
+  booksList: any[] = [];
   constructor(
     private openAddBookService: OpenAddBookService,
     private openAddInstancesService: OpenAddBookInstanceService,
@@ -47,8 +47,6 @@ export class BooksComponent implements OnInit {
     this.booksService.getBooksData().subscribe((data) => {
       this.booksList = data;
     },
-     error => {
-      console.error('Error fetching book data', error);
-    });
+    )
   }
 }

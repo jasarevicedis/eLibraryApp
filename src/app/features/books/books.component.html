@@ -34,12 +34,14 @@
 
 
     <div class="books-grid">
+        <!--
         @for (book of booksList; track book.title) {
             <app-book-card [routerLink]="['/books/1']"></app-book-card>
         } @empty {
             <p>No books yet</p>
-        }
+        }-->
 
+        <app-book-card *ngFor="let book of booksList" [routerLink]="['/books/1']"></app-book-card> 
     
     </div>
 
