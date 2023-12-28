@@ -10,7 +10,10 @@ export class OpenEditCategoriesService {
   constructor(private dialog: MatDialog) { }
   
   openEditCategories(): void {
-    this.dialog.open(CategoriesDialogComponent, {});
+
+      this.dialog.open(CategoriesDialogComponent, {});
+
+    
   }
 
 }

@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   templateUrl: './categories-dialog.component.html',
   styleUrls: ['./categories-dialog.component.scss']
 })
-export class CategoriesDialogComponent implements OnInit {
+export class CategoriesDialogComponent implements OnInit  {
   categoriesList: any;
   constructor(private categoriesService: CategoriesService, private router: Router) {}
 

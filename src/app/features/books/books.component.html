@@ -34,29 +34,13 @@
 
 
     <div class="books-grid">
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
-        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        @for (book of booksList; track book.title) {
+            <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        } @empty {
+            <p>No books yet</p>
+        }
 
-        
-
+    
     </div>
 
 <mat-paginator class="paginator" [length]="100"
