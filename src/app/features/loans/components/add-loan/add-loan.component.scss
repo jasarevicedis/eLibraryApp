@@ -50,10 +50,13 @@
                         width: 300px;
                         height: 40px;
                         display: flex;
+                        margin-top: 20px;
                         //background-color: lightblue;
                         input {
-                            width: 250px;
-                            border-radius: 6px;
+                            width: 300px;
+                            border-radius: 8px;
+                            border:1px solid  rgb(174, 200, 201);
+                            padding-left: 20px;
                         }
                     }
                     .students-grid {
@@ -65,6 +68,17 @@
                         max-height: 400px;
                         //background-color: red;
                         overflow-y: auto;
+                        label {
+                            input {
+                                display: none;
+                            }
+                            input[type="radio"]:checked + .search-student-card {
+                                border: 2px solid rgb(0, 200, 255);
+                                
+                                
+                                
+                            }
+                        }
                         .search-student-card {
                             display: flex;
                             width: 180px;
@@ -82,8 +96,19 @@
                                 margin-left: 10px;
                                 //background-color: black;
                             }
-                            p {
+                            .text-data {
                                 margin-left: 10px;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                                .name {
+                                    font-size: 13px;
+                                    font-weight: bold;
+                                }
+                                .id {
+                                    font-size: 11px;
+                                }
                             }
                         }
                     }
@@ -113,10 +138,13 @@
                         width: 300px;
                         height: 40px;
                         display: flex;
+                        margin-top: 20px;
                         //background-color: lightblue;
                         input {
-                            width: 250px;
-                            border-radius: 6px;
+                            width: 300px;
+                            border-radius: 8px;
+                            border:1px solid  rgb(174, 200, 201);
+                            padding-left: 20px;
                         }
                     }
                     .books-grid {
@@ -128,7 +156,17 @@
                         max-height: 400px;
                         //background-color: red;
                         overflow-y: auto;
+                        label {
+                            input {
+                                display: none;
+                            }
+                            input[type="radio"]:checked + .search-book-card {
+                                border: 2px solid rgb(0, 200, 255);
+                                       
+                            }
+                        }
                         .search-book-card {
+                            
                             width: 130px;
                             height: 200px;
                             display: flex;
@@ -209,4 +247,6 @@
             background-color: lightseagreen;
         }
     }*/
+
+    
 }
