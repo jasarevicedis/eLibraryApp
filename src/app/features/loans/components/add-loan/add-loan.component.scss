@@ -65,6 +65,17 @@
                         max-height: 400px;
                         //background-color: red;
                         overflow-y: auto;
+                        label {
+                            input {
+                                display: none;
+                            }
+                            input[type="radio"]:checked + .search-student-card {
+                                border: 2px solid rgb(0, 200, 255);
+                                
+                                
+                                
+                            }
+                        }
                         .search-student-card {
                             display: flex;
                             width: 180px;
@@ -82,8 +93,19 @@
                                 margin-left: 10px;
                                 //background-color: black;
                             }
-                            p {
+                            .text-data {
                                 margin-left: 10px;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                                .name {
+                                    font-size: 13px;
+                                    font-weight: bold;
+                                }
+                                .id {
+                                    font-size: 11px;
+                                }
                             }
                         }
                     }
