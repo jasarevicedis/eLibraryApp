@@ -5,8 +5,21 @@
     </button>
 </div>
 <div class="categories-grid">
+    <div  class="category-item">
+        <p>Fiction</p>
+        <button (click)="openDeleteCategoryDialog()" class="delete-category-x">X</button>
+    </div>
+    <div  class="category-item">
+        <p>Fiction</p>
+        <button (click)="openDeleteCategoryDialog()" class="delete-category-x">X</button>
+    </div>
+    <div  class="category-item">
+        <p>Fiction</p>
+        <button (click)="openDeleteCategoryDialog()" class="delete-category-x">X</button>
+    </div>
     
-    @for (category of categoriesList; track category.name) {
+    <!--
+        @for (category of categoriesList; track category.name) {
         <div  class="category-item">
             <p>{{ category.name }}</p>
             <button class="delete-category-x">X</button>
@@ -14,6 +27,8 @@
     } @empty {
         <p>No categories yet</p>
     }
+    -->
+    
     
 </div>
 <button (click)="openAddCategoryDialog()" class="add-category">Add new</button>
