@@ -34,14 +34,30 @@
 
 
     <div class="books-grid">
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        <app-book-card [routerLink]="['/books/1']"></app-book-card>
+        
+
         <!--
-        @for (book of booksList; track book.title) {
+            @for (book of booksList; track book.title) {
             <app-book-card [routerLink]="['/books/1']"></app-book-card>
         } @empty {
             <p>No books yet</p>
-        }-->
+        }
+        -->
 
-        <app-book-card *ngFor="let book of booksList" [routerLink]="['/books/1']"></app-book-card> 
+        <!--<app-book-card *ngFor="let book of booksList" [routerLink]="['/books/1']"></app-book-card> -->
     
     </div>
 
