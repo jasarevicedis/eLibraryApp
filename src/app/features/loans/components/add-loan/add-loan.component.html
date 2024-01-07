@@ -1,1 +1,124 @@
-<p>add-loan works!</p>
+<div class="dialog-header">
+    <p>Add Loan</p>
+    <button class="close"></button>
+</div>
+<form>
+<div class="dialog-content">
+    <mat-stepper [linear]="isLinear" #stepper>
+        <mat-step [stepControl]="firstFormGroup" id="student-step">
+          <form [formGroup]="firstFormGroup" id="student-details-form">
+            <ng-template matStepLabel>Choose student</ng-template>
+            <div class="form-content">
+                <div class="student-search">
+                    <input type="search">
+                </div>
+                <div class="students-grid">
+                    <div class="search-student-card">
+                        <img src="" alt="" class="profile">
+                        <p class="name">Edis Jasarevic</p>
+                    </div>
+                    <div class="search-student-card">
+                        <img src="" alt="" class="profile">
+                        <p class="name">Edis Jasarevic</p>
+                    </div>
+                    <div class="search-student-card">
+                        <img src="" alt="" class="profile">
+                        <p class="name">Edis Jasarevic</p>
+                    </div>
+                    <div class="search-student-card">
+                        <img src="" alt="" class="profile">
+                        <p class="name">Edis Jasarevic</p>
+                    </div>
+                    <div class="search-student-card">
+                        <img src="" alt="" class="profile">
+                        <p class="name">Edis Jasarevic</p>
+                    </div>
+                    <div class="search-student-card">
+                        <img src="" alt="" class="profile">
+                        <p class="name">Edis Jasarevic</p>
+                    </div>
+                    <div class="search-student-card">
+                        <img src="" alt="" class="profile">
+                        <p class="name">Edis Jasarevic</p>
+                    </div>
+                    <div class="search-student-card">
+                        <img src="" alt="" class="profile">
+                        <p class="name">Edis Jasarevic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stepper-nav">
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup" label="Choose book">
+            <form [formGroup]="secondFormGroup" id="book-details-form">
+                <ng-template matStepLabel>Choose Book</ng-template>
+                <div class="form-content">
+                    <div class="book-search">
+                        <input type="search">
+                    </div>
+                    <div class="books-grid">
+                        <div class="search-book-card">
+                            <img src="" alt="" class="cover">
+                            <p class="title">Na Drini cuprija</p>
+                            <p class="author">Ivo Andric</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="stepper-nav">
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup" label="Loan details">
+            <form [formGroup]="secondFormGroup">
+              <mat-form-field>
+                <mat-label>Address</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                       required>
+              </mat-form-field>
+              <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Submit</ng-template>
+          <p>You are now done.</p>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </mat-step>
+      </mat-stepper>
+    <!--
+    <div class="left-section">
+        <upload-dropzone [uploader]="uploader" 
+                     [options]="options"
+                     [onUpdate]="onUpdate"
+                     [width]="width"
+                     [height]="height"> 
+    </upload-dropzone>
+    </div>
+    <div class="right-section">
+        <mat-form-field id="title-field">
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="Sushi">
+        </mat-form-field>
+        <mat-form-field id="author-field">
+            <mat-label>Author</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="Sushi">
+        </mat-form-field>
+        <mat-form-field id="description-field">
+            <mat-label>Description</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+
+    </div>-->
+</div>
+<!--<button id="add-book-submit">Add Book</button>-->
+</form>
