@@ -7,6 +7,7 @@ import { UploaderModule } from 'angular-uploader';
 import {MatStepperModule} from '@angular/material/stepper';
 import {FormBuilder, Validators,  ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import { MatDialogRef } from '@angular/material/dialog';
 
 
 
@@ -50,7 +51,10 @@ export class AddBookComponent {
   });
   isLinear = false;
 
-  constructor(private _formBuilder: FormBuilder) {}
-
+  constructor(private _formBuilder: FormBuilder,
+    private dialogRef: MatDialogRef<AddBookComponent>) {}
+  closeDialog(): void {
+    this.dialogRef.close();
+  }
   
 }

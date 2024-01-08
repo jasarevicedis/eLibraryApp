@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
     selector: 'app-add-loan',
@@ -54,6 +55,10 @@ export class AddLoanComponent {
       });
       isLinear = false;
     
-      constructor(private _formBuilder: FormBuilder) {}
+      constructor(private _formBuilder: FormBuilder,
+        private dialogRef: MatDialogRef<AddLoanComponent>) {}
     
+      closeDialog(): void {
+        this.dialogRef.close();
+      }
 }

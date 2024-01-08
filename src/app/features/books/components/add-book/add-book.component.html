@@ -1,6 +1,8 @@
 <div class="dialog-header">
     <p>Add Book</p>
-    <button class="close"></button>
+    <button (click)="closeDialog()" class="close">
+      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+    </button>
 </div>
 <form>
 <div class="dialog-content">
@@ -20,15 +22,15 @@
                 <div class="right-section">
                     <mat-form-field id="title-field">
                         <mat-label>Title</mat-label>
-                        <input matInput placeholder="Ex. Pizza" value="Sushi">
+                        <input matInput>
                     </mat-form-field>
-                    <mat-form-field id="author-field">
-                        <mat-label>Author</mat-label>
-                        <input matInput placeholder="Ex. Pizza" value="Sushi">
+                    <mat-form-field id="year-field">
+                        <mat-label>Publish year</mat-label>
+                        <input type="number" matInput>
                     </mat-form-field>
                     <mat-form-field id="description-field">
                         <mat-label>Description</mat-label>
-                        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                        <textarea matInput ></textarea>
                     </mat-form-field>
             
                 </div>
@@ -38,13 +40,58 @@
             </div>
           </form>
         </mat-step>
+
+
         <mat-step [stepControl]="secondFormGroup" label="Author Details">
-          <form [formGroup]="secondFormGroup">
-            <mat-form-field>
-              <mat-label>Address</mat-label>
-              <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
-                     required>
-            </mat-form-field>
+          <form [formGroup]="secondFormGroup" id="author-details-form">
+            <div class="author-header">
+              <input type="search">
+              <button class="new-author">New author</button>
+            </div>
+            <div class="authors-grid">
+              <label>
+                <input type="radio" name="author-radio" id="author-radio1" >
+                <div class="search-author-card">
+                  <img src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/64-512.png" alt="" class="profile">
+                  <p class="author">Ivo Andric</p>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="author-radio" id="author-radio1" >
+                <div class="search-author-card">
+                  <img src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/64-512.png" alt="" class="profile">
+                  <p class="author">Ivo Andric</p>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="author-radio" id="author-radio1" >
+                <div class="search-author-card">
+                  <img src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/64-512.png" alt="" class="profile">
+                  <p class="author">Ivo Andric</p>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="author-radio" id="author-radio1" >
+                <div class="search-author-card">
+                  <img src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/64-512.png" alt="" class="profile">
+                  <p class="author">Ivo Andric</p>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="author-radio" id="author-radio1" >
+                <div class="search-author-card">
+                  <img src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/64-512.png" alt="" class="profile">
+                  <p class="author">Ivo Andric</p>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="author-radio" id="author-radio1" >
+                <div class="search-author-card">
+                  <img src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/64-512.png" alt="" class="profile">
+                  <p class="author">Ivo Andric</p>
+                </div>
+              </label>
+            </div>
             <div>
               <button mat-button matStepperPrevious>Back</button>
               <button mat-button matStepperNext>Next</button>
@@ -52,12 +99,29 @@
           </form>
         </mat-step>
         <mat-step [stepControl]="secondFormGroup" label="Choose categories">
-            <form [formGroup]="secondFormGroup">
-              <mat-form-field>
-                <mat-label>Address</mat-label>
-                <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
-                       required>
-              </mat-form-field>
+            <form [formGroup]="secondFormGroup" id="category-details-form">
+              <div class="categories-grid">
+                <label><input type="checkbox" name="category" id="category1">
+                  <div class="category-card">
+                      <p>Fiction</p>
+                  </div> 
+                </label>
+                <label><input type="checkbox" name="category" id="category1">
+                  <div class="category-card">
+                      <p>Fiction</p>
+                  </div> 
+                </label>
+                <label><input type="checkbox" name="category" id="category1">
+                  <div class="category-card">
+                      <p>Fiction</p>
+                  </div> 
+                </label>
+                <label><input type="checkbox" name="category" id="category1">
+                  <div class="category-card">
+                      <p>Fiction</p>
+                  </div> 
+                </label>
+              </div>
               <div>
                 <button mat-button matStepperPrevious>Back</button>
                 <button mat-button matStepperNext>Next</button>
@@ -66,7 +130,11 @@
           </mat-step>
         <mat-step>
           <ng-template matStepLabel>Submit</ng-template>
-          <p>You are now done.</p>
+          <p>Add instances</p>
+          <mat-form-field id="instances-field">
+            <mat-label>Add copies</mat-label>
+            <input type="number" placeholder="0" matInput>
+        </mat-form-field>
           <div>
             <button mat-button matStepperPrevious>Back</button>
             <button mat-button (click)="stepper.reset()">Reset</button>
