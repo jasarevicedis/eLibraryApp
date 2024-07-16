@@ -8,13 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { filter } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
     standalone: true,
-    imports: [SidebarComponent, HeaderComponent, RouterOutlet, HttpClientModule, CommonModule]
+    imports: [SidebarComponent, HeaderComponent, RouterOutlet, HttpClientModule, CommonModule, ReactiveFormsModule]
 })
 export class AppComponent  {
   title = 'eLibraryApp';
