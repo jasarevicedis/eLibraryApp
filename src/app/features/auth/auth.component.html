@@ -1,7 +1,7 @@
 <div class="login-box">
     <div class="logo-container"></div>
     <div class="login-title"></div>
-    <form [formGroup]="loginForm" action="" (ngSubmit)="onSubmit()">
+    <form [formGroup]="loginForm" action="" (ngSubmit)="login()">
         <label for="username">Username or email</label>
         <input formControlName="usernameOrEmail" type="text" id="username-or-email">
         <label for="password">Password</label>
