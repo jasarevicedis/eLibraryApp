@@ -19,7 +19,7 @@ export const routes: Routes = [
   {path: 'students', component: StudentsComponent},
   {path: 'students/1', component: StudentPageComponent},
   {path: 'loans', component: LoansComponent},
-  {path: 'login', component: AuthComponent},
+  {path: 'login', component: AuthComponent, data: {showHeaderAndSidebar: false}},
   {path: 'panel', component: PanelComponent, children:[
     {path:'profile', component: ProfileComponent},
     {path:'settings', component: SettingsComponent},
