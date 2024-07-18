@@ -11,8 +11,8 @@ import { UserRequest } from '../../models/user-request';
 })
 export class AuthService {
   userRole: string | undefined= '';
-  private apiUrl = "https://localhost:7180/api/Auth";
-  private apiUserUrl = "https://localhost:7180/api/User";
+  private apiUrl = "https://localhost:7180/api/auth";
+  private apiUserUrl = "https://localhost:7180/api/users";
   user : BehaviorSubject<UserRequest | null> = new BehaviorSubject<UserRequest | null>(null)
 
   constructor(private http: HttpClient, private router: Router) {
@@ -21,7 +21,7 @@ export class AuthService {
 
   login(loginRequest: LoginRequest) 
   {
-    return this.http.post<LoginResponse>(`${this.apiUrl}/login`, loginRequest).pipe(
+    return this.http.post<any>(`${this.apiUrl}/login`, loginRequest).pipe(
       tap(response => {
         localStorage.setItem('role', response.role as string);
         this.userRole = response.role;

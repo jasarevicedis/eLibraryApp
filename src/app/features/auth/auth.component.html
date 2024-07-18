@@ -2,10 +2,28 @@
     <div class="logo-container"></div>
     <div class="login-title"></div>
     <form [formGroup]="loginForm" action="" (ngSubmit)="login()">
-        <label for="username">Username or email</label>
-        <input formControlName="usernameOrEmail" type="text" id="username-or-email" placeholder="email@email.com">
-        <label for="password">Password</label>
-        <input formControlName="password" type="password" id="password" placeholder="Password (At least 8 characters)">
+        <div class="usernameOrEmailField">
+            <label for="username">Username or email</label>
+            <input formControlName="usernameOrEmail" type="text" id="username-or-email" placeholder="email@email.com" required>
+            <div *ngIf="(emailOrUsernameControl?.dirty || emailOrUsernameControl?.touched) && emailOrUsernameControl?.hasError('invalidFormat') && !emailOrUsernameControl?.hasError('required')">
+                <span class="error">Invalid format</span>
+            </div>
+            <div *ngIf="(emailOrUsernameControl?.dirty || emailOrUsernameControl?.touched) && emailOrUsernameControl?.hasError('required')">
+                <span class="error">Email or username is required</span>
+            </div>
+        </div>
+        <div class="passwordField">
+            <label required minlength="4" for="password">Password</label>
+            <input formControlName="password" type="password" id="password" placeholder="Password (At least 8 characters)" required>
+            @if (passControl?.dirty || passControl?.touched) {
+                @if (passControl?.hasError('required')) {
+                    <span class="error">Password is required</span>
+                }
+                @else if (passControl?.invalid) {
+                    <span class="error">Minimum 8 characters</span>
+                }
+            }  
+            </div>
         <button type="submit" [disabled]="!loginForm.valid" class="submit-login">Login</button>
     </form>
     

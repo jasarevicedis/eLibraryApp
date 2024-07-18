@@ -20,11 +20,33 @@
             width: 90%;
             align-self: center;
             margin-top: 200px;
+            .usernameOrEmailField {
+                //background-color: blue;
+                height: 110px;
+            }
+            .passwordField {
+                //background-color: blue;
+                height: 110px;
+            }
+            .error {
+                color: white;
+                background-color: rgb(253, 88, 88);
+                height: 30px;
+                width: calc(100% - 10px);
+                display: flex;
+                align-items: center;
+                margin: 0px;
+                //font-size: 14px;
+                border-radius: 5px;
+                padding-left: 12px;
+                margin-top: 3px;
+                font-size: 13px
+            }
             label {
                 margin-bottom: 5px;
             }
             input {
-                margin-bottom: 20px;
+                margin-bottom: 5px;
                 height: 50px;
 	            font-size: 16px;
 	            border: 2px solid #d1d3d4;

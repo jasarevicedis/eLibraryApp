@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import {FormGroup, FormControl} from '@angular/forms';
 import { LoginResponse } from 'src/app/core/models/login-response';
 import { LoginRequest } from 'src/app/core/models/login-request';
@@ -10,16 +10,13 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-auth',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, ],
+  imports: [CommonModule,ReactiveFormsModule ],
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss']
 })
 export class AuthComponent {
   input: string | undefined = "";
-  loginForm = new FormGroup({
-    usernameOrEmail: new FormControl(''),
-    password: new FormControl(''),
-  });
+  loginForm: FormGroup;
 
   loginResponse: LoginResponse = {};
   loginRequest: LoginRequest = {};
@@ -30,16 +27,26 @@ export class AuthComponent {
     console.warn(this.loginForm.value);
   }
 
-  constructor(private authService: AuthService, private router: Router){}
+  constructor(private authService: AuthService, private router: Router,private f: FormBuilder){
+    this.loginForm = this.f.group({
+      usernameOrEmail: [ '',[Validators.required]],
+      password: ['',[Validators.required, Validators.minLength(8)]],
+    });
+  }
 
   login() 
   {
-    this.input = this.loginForm.get('usernameOrEmail')?.value?.toString();
-    
-    this.loginRequest.email = this.input;
-    // Mark all form controls as touched to display errors
-    
-    this.loginRequest.password = this.loginForm.get('pass')?.value;
+    const input = this.loginForm.get('usernameOrEmail')?.value?.toString();
+    this.loginRequest.username = input;
+
+    if (this.loginForm.invalid) {
+      Object.values(this.loginForm.controls).forEach(control => {
+        control.markAsTouched();
+      });
+      return;
+    }
+
+    this.loginRequest.password = this.loginForm.get('password')?.value;
 
     this.authService.login(this.loginRequest)
       .subscribe({
@@ -53,9 +60,10 @@ export class AuthComponent {
           this.loginResponse = response;
           console.log(response);
           
-          localStorage.setItem('email', this.loginResponse.email as string);
+          localStorage.setItem('username', this.loginResponse.username as string);
 
           console.log(this.loginResponse.email)
+          /*
           this.authService.setUserRole(response.role);
           if (response.role == 'SuperAdmin') {
             this.router.navigate(['/books']);
@@ -66,12 +74,19 @@ export class AuthComponent {
           this.authService.getCurrentUser().subscribe((res  : any)=> {
             this.authService.user.next(res);
           })
-          
+          */
         },
         error: error => {
           //this.showInvalid2FAPopup("Wrong password!");
       }
       });
       
+  }
+
+  get emailOrUsernameControl() {
+    return this.loginForm.get('usernameOrEmail')
+  }
+  get passControl() {
+    return this.loginForm.get('password');
   }
 }
