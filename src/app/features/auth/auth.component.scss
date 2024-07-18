@@ -2,30 +2,57 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: lightcyan;
+    background-color: rgb(216, 240, 252);
     align-items: center;
     justify-content: center;
     .login-box {
-        width: 500px;
-        height: 600px;
+        width: 450px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         background-color: white;
         border-radius: 12px;
+        border-radius: 10px;            
+        box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
         form {
             display: flex;
             flex-direction: column;
             width: 90%;
             align-self: center;
-            margin-top: 250px;
+            margin-top: 200px;
             label {
                 margin-bottom: 5px;
             }
             input {
-                height: 40px;
-                width: 100%;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
+                height: 50px;
+	            font-size: 16px;
+	            border: 2px solid #d1d3d4;
+                width:calc(100% - 12px);
+
+	            //padding: 12px;
+                padding-left: 12px;
+	            font-family: "Poppins";
+	            border-radius: 6px;
+	            color: #111;
+	            background: #fff;
+                &:focus,
+                &.active {
+                    outline: none;
+                    border-color: #03a9f4;
+                }
+                &:disabled {
+                    cursor: not-allowed;
+                    background: #f2f2f2;
+                    opacity: 0.6;
+                }
+                &.input--lg {
+                    height: 56px;
+                 font-size: 18px;
+                 padding: 15px;
+             }
             }
+            
             .submit-login {
                 margin-top: 30px;
                 align-self: center;
