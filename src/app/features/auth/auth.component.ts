@@ -57,6 +57,7 @@ export class AuthComponent {
             localStorage.clear();
             this.expiredSessionPopup();
           }, 1000 * 60 * 30);*/
+          
           this.loginResponse = response;
           console.log(response);
           
@@ -75,6 +76,7 @@ export class AuthComponent {
             this.authService.user.next(res);
           })
           */
+          this.router.navigate(['']);
         },
         error: error => {
           //this.showInvalid2FAPopup("Wrong password!");
