@@ -5,9 +5,9 @@ import { CommonModule } from '@angular/common';
   selector: 'app-settings',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.scss']
+  templateUrl: './general-settings.component.html',
+  styleUrls: ['./general-settings.component.scss']
 })
-export class SettingsComponent {
+export class GeneralSettingsComponent {
 
 }
