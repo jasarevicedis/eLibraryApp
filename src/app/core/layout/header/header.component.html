@@ -16,7 +16,7 @@
 </div>
 <div  class="profile-menu" [class.active-profile-menu]="isProfileClicked">
     <ul>
-        <li routerLink="panel/profile"><p>Settings</p></li>
+        <li routerLink="settings/profile"><p>Settings</p></li>
         <li routerLink="auditlog"><p>Logs</p></li>
         <li id="dark-mode">
             <p>Dark mode</p>
@@ -61,6 +61,6 @@
         
     </div>
     <div class="notifications-footer">
-        <a href="">SEE ALL</a>
+        <a routerLink="notifications" href="">SEE ALL</a>
     </div>
 </div>

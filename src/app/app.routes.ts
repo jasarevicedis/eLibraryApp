@@ -10,7 +10,8 @@ import { SettingsComponent } from './features/settings/settings.component';
 import { ProfileComponent } from './features/settings/components/profile/profile.component';
 import { GeneralSettingsComponent } from './features/settings/components/general-settings/general-settings.component';
 import { NotificationsSettingsComponent } from './features/settings/components/notifications-settings/notifications-settings.component';
-import { AuditlogComponent } from './features/settings/components/auditlog/auditlog.component';
+import { AuditlogComponent } from './features/auditlog/auditlog.component';
+import { NotificationsComponent } from './features/notifications/notifications.component';
 
 export const routes: Routes = [
     {path:'', component: HomeComponent},
@@ -20,11 +21,12 @@ export const routes: Routes = [
   {path: 'students/1', component: StudentPageComponent},
   {path: 'loans', component: LoansComponent},
   {path: 'login', component: AuthComponent, data: {showHeaderAndSidebar: false}},
-  {path: 'panel', component: SettingsComponent, children:[
+  {path: 'settings', component: SettingsComponent, children:[
     {path:'profile', component: ProfileComponent},
-    {path:'settings', component: GeneralSettingsComponent},
+    {path:'general', component: GeneralSettingsComponent},
     {path: 'notifications', component: NotificationsSettingsComponent},
     
   ]},
+  {path: 'notifications', component: NotificationsComponent},
   {path:'auditlog', component:AuditlogComponent}
 ];
