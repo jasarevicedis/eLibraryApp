@@ -1,12 +1,12 @@
 :host {
-    //width: 100%;
+    width: calc(100% - 200px);
     //min-height: calc(100vh - 60px);
-   
+    margin-top: 60px;
+    margin-left: 200px;
     background-color: rgb(234, 242, 248);
     display: flex;
     flex-direction: column;
-    //align-items: center;
-    margin-left: 50px;
+    //min-height: 100vh;
     .audit-log-header {
         width: 700px;
         height: 60px;
@@ -14,6 +14,7 @@
         align-items: center;
         //background-color: lightblue;
         margin-top: 10px;
+        margin-left: 50px;
         justify-content: space-between;
         p {}
         .log-nav {
@@ -41,6 +42,8 @@
     .logs-container {
         margin-top: 20px;
         width: 700px;
+        margin-left: 50px;
+
         display: flex;
         flex-direction: column;
         .log-item {
@@ -84,4 +87,39 @@
             }
         }
     }
+
+
+
+
+
+    table {
+        min-width: 0;//needed to override material styling
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        background-color: rgb(177, 234, 255);
+        margin-top: 50px;
+        //margin-bottom: 100px;
+        thead {}
+        tbody {
+            tr {
+                background: none;
+                min-height: 0px;
+                height: 30px;
+                background-color: red;
+            }
+            td {}
+        }
+        
+    }
+    mat-paginator {
+        min-width: 0;//needed to override material styling
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        margin-bottom: 100px;
+    }
+    /*
+    .mdc-data-table__table {
+        max-width: 500px;
+        min-width: 0;
+    }*/
 }

@@ -24,6 +24,7 @@ export const routes: Routes = [
     {path:'profile', component: ProfileComponent},
     {path:'settings', component: GeneralSettingsComponent},
     {path: 'notifications', component: NotificationsSettingsComponent},
-    {path:'auditlog', component:AuditlogComponent}
-  ]}
+    
+  ]},
+  {path:'auditlog', component:AuditlogComponent}
 ];
