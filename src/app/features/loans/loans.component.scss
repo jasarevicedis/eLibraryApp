@@ -284,8 +284,19 @@
         }
         //margin-bottom: 30px;
     }
+    
+
+
+
+    table {
+        min-width: 0;
+        width: calc(100% - 100px);
+        background-color: rgb(159, 177, 218);
+        margin-left: 50px;
+
+    }
     .paginator {
-        width: 970px;
+        width: calc(100% - 100px);
         margin-left: 50px;
         margin-bottom: 100px;
         background-color: lightgray;

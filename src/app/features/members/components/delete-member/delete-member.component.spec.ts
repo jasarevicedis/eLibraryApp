@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { DeleteMemberComponent } from './delete-member.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('DeleteMemberComponent', () => {
+  let component: DeleteMemberComponent;
+  let fixture: ComponentFixture<DeleteMemberComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComponent]
+      imports: [ DeleteMemberComponent ]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(HeaderComponent);
+
+    fixture = TestBed.createComponent(DeleteMemberComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
